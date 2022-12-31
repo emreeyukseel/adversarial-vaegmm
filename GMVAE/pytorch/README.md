@@ -1,5 +1,7 @@
 # Gaussian Mixture Variational Autoencoder
 
+The source codes obtained from https://github.com/jariasf/GMVAE. The minor changed had been done to make suitable for adversarial sample detection cases.
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1jGOAgwleppSMtUsr7XaldRNBbiwBMhxd)
 
 Implementation of Gaussian Mixture Variational Autoencoder (GMVAE) for Unsupervised Clustering in tensorflow. The model is based on the M2 Unsupervised model proposed by [Kingma et al.](https://arxiv.org/pdf/1406.5298) for semi-supervised learning. Unlike other implementations that use marginalization for the categorical latent variable, we use the [Gumbel-Softmax distribution](https://arxiv.org/pdf/1611.01144), resulting in better time complexity because of the reduced number of gradient estimations. We modified the M2 generative model to represent a Mixture of Gaussians.
